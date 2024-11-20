@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body, input {
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+img.fade-out {
+    opacity: 0;
+}
+
+.title-container {
+    position: absolute;
+    top: 40px; 
+    right: 100px;
+    text-align: left;
+    z-index: 10;
+}
+
+.main-title {
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 2px 2px 5px rgba(190, 39, 1, 0.636);
+}
+
+
+.container {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+}
+
+.container:before {
+    content: '';
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    border: 3px solid rgb(190, 38, 1);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: right 0% top 95%;
+    top: -20%;
+    right: 48%; 
+    transform: translateY(-48%);
+    transition: opacity 0.6s;
+    z-index: 1;
+    opacity: 1;
+}
+
+.container-Border {
+    content: '';
+    position: absolute;
+    width: 2000px;
+    height: 2095px;
+    background-color: rgb(190, 38, 1);
+    border: 100px solid rgb(190, 38, 1);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position-y: 1100px;
+    top: -20%;
+    left: -80.5%; 
+    transform: translateY(-50%);
+    transition: opacity 0.6s;
+    z-index: 0;
+    opacity: 1;
+}
+
+.container.fade-out:before {
+    opacity: 0;
+}
+
+.container.image-1:before {
+    background-image: url('Pie1.jpg');
+    background-size: 1000px;
+}
+
+.container.image-2:before {
+    background-image: url('b829edd68c818352a26f754a8184e636_bak---02---libby_s-famous-pumpkin-pie-617_edit_1080_850.jpg');
+    background-size: 1100px;
+}
+
+.container.image-3:before {
+    background-image: url('cherry-pie.webp');
+    background-size: 980px;
+}
+
+.forms-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.signin-signup {
+    position: absolute;
+    top: 52%;
+    left: 76%; 
+    transform: translate(-50%, -50%);
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.5rem;
+    overflow: hidden;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+form.sign-in-form {
+    z-index: 1;
+    opacity: 0%;
+}
+
+form.sign-up-form {
+    z-index: 2;
+    opacity: 100%;
+}
+
+.title {
+    font-size: 2.6rem;
+    color: black;
+    margin-bottom: 10px;
+    font-weight: 1000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.input-field {
+    max-width: 380px;
+    width: 100%;
+    height: 65px;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0.4rem;
+    box-shadow: rgba(0, 0, 0, 0.4);
+}
+
+.input-field i {
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    font-size: 1.1rem;
+}
+
+.input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 450;
+    font-size: 1.1rem;
+    color: black;
+}
+
+.btn {
+    width: 150px;
+    height: 49px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    color: white;
+    background-color: rgb(190, 38, 1);
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 10px 0;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.btn-register {
+    width: 150px;
+    height: 49px;
+    border: 2px solid rgb(190, 38, 1);
+    outline: none;
+    border-radius: 50px;
+    color: rgb(190, 38, 1);
+    background-color: transparent;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+    margin-top: 20px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: rgb(117, 23, 0);
+}
+
+.btn-register:hover {
+    background-color: rgba(168, 34, 0, 0.5);
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    height: 50px;
+    width: 50px;
+    font-size: 1.1;
+    color: black;
+    border: 1.8px solid black;
+    margin: 5px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    color: rgb(190, 38, 1);
+    border-color: rgb(190, 38, 1);
+}
+
+.social-text {
+    margin-top: 10px;
+    font-weight: 500;
+    text-decoration: underline;
+}

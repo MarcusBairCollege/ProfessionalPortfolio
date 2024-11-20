@@ -1,0 +1,54 @@
+*{
+    background-color: rgb(32, 113, 63);
+    }
+
+body{
+    font-family: Arial, sans-serif;
+    }
+
+h1{
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+    font-style: italic;
+    color: white;
+    }
+
+ul{
+    max-width: 100px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    }
+
+button{
+    color: black;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    height: 40px;
+    width: 150px;
+    }
+
+button.hover{
+    cursor: crosshair;
+    background-color: yellow;
+    }
+
+input{
+    background-color: white;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    }
+
+.completed{
+    text-decoration: line-through;
+    }
+
+.hide{
+    display: none;
+    }
+
+    

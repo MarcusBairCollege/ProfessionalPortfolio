@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in & Sign up Form with Image Slider</title>
+    <link rel="stylesheet" href="Signup.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body onload="startTimer()">
+    <div class="container image-1">
+        <div class="container-Border"></div>
+    </div>
+    <div class="forms-container">
+        <div class="title-container"> 
+            <h1 class="main-title">Pie of the Month Club!</h1> 
+        </div>
+        <div class="signin-signup">
+            <form action="#" class="sign-in-form">
+                <h2 class="title">Sign in</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username" />
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" />
+                </div>
+                <input type="submit" value="Login" class="btn solid" />
+                <p class="social-text">Or Sign in with these social platforms</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <ion-icon name="logo-google"></ion-icon>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </div>
+                <button type="button" class="btn-register" onclick="redirectToSignUpPage()">Sign Up</button>            
+            </form>
+
+            <form action="#" class="sign-up-form">
+                <h2 class="title">Sign up</h2>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email" />
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username" />
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" />
+                </div>
+                <input type="submit" value="Sign up" class="btn solid" />
+                <p class="social-text">Or Sign up with these social platforms</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <ion-icon name="logo-google"></ion-icon>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </div>
+                <button type="button" class="btn-register" onclick="redirectToSignUpPage()">Sign Up</button>            
+            </form>
+        </div>
+    </div>
+    <script src="Signup.js"></script>
+</body>
+</html>
